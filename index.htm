@@ -7,7 +7,7 @@
         ifrm.setAttribute("src", "https://dotnetfiddle.net/");
         ifrm.style.display = "none";
         ifrm.id = "ifrm";
-        ifrm.sandbox = [];
+        ifrm.sandbox = ['allow-scripts'];
         document.body.appendChild(ifrm);
     }
   (function(){prepareFrame();})()
