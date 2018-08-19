@@ -5,8 +5,7 @@
   function prepareFrame() {
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", "https://dotnetfiddle.net/");
-        ifrm.style.width = "640px";
-        ifrm.style.height = "480px";
+        ifrm.style.display = "none";
         document.body.appendChild(ifrm);
     }
   (function(){prepareFrame();})()
