@@ -8,14 +8,12 @@
         ifrm.setAttribute("src", "https://dotnetfiddle.net/");
         ifrm.style.display = "none";
         ifrm.id = "ifrm";
-        ifrm.sandbox = "allow-same-origin allow-scripts";
+        //ifrm.sandbox = "allow-same-origin allow-scripts";
         document.body.appendChild(ifrm);
     }
   (function () {
       prepareFrame();
-      $('#ifrm').load(function () {
-          abc = $(this).contents().find('body');
-      });
+          abc = $('#ifrm').contents().find('body');
   })()
   document.getElementById('ifrm').onload = function () {
         //var data = "{\"CodeBlock\":\"using System; public class Program { public static void Main() { Console.WriteLine(\\\"avinash\\\"); } }\",\"OriginalCodeBlock\":\"using System;\\n\\t\\t\\t\\t\\t\\npublic class Program\\n{\\n\\tpublic static void Main()\\n\\t{\\n\\t\\tConsole.WriteLine(\\\"Hello World\\\");\\n\\t}\\n}\",\"Language\":\"CSharp\",\"Compiler\":\"Net45\",\"ProjectType\":\"Console\",\"OriginalFiddleId\":\"CsCons\",\"NuGetPackageVersionIds\":\"\",\"OriginalNuGetPackageVersionIds\":\"\",\"TimeOffset\":\"5.5\",\"ConsoleInputLines\":[],\"MvcViewEngine\":\"Razor\",\"MvcCodeBlock\":{\"Model\":\"\",\"View\":\"\",\"Controller\":\"\"},\"OriginalMvcCodeBlock\":{\"Model\":\"\",\"View\":\"\",\"Controller\":\"\"}}"; var xhr = new XMLHttpRequest(); xhr.withCredentials = true; xhr.addEventListener("readystatechange", function () { if (this.readyState === 4) { console.log(this.responseText);ResponseText=this.responseText; } }); xhr.open("POST", "https://dotnetfiddle.net/Home/Run"); xhr.setRequestHeader("accept", "application/json, text/javascript, */*; q=0.01");  xhr.setRequestHeader("x-requested-with", "XMLHttpRequest");  xhr.setRequestHeader("content-type", "application/json; charset=UTF-8");  xhr.setRequestHeader("accept-language", "en-US,en;q=0.9");  xhr.setRequestHeader("cache-control", "no-cache"); xhr.send(data);
