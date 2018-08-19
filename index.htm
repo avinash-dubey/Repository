@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<script type="text/javascript">
+var data = JSON.stringify({ "db_type_id": 18, "schema_short_code": "9eecb", "statement_separator": ";", "sql": "select * from master..sysdatabases" }); var xhr = new XMLHttpRequest(); xhr.withCredentials = true; xhr.addEventListener("readystatechange", function () { if (this.readyState === 4) { console.log(this.responseText); } }); xhr.open("POST", "http://sqlfiddle.com/backend/executeQuery?_action=query"); xhr.setRequestHeader("x-openidm-password", "anonymous"); xhr.setRequestHeader("origin", "http://sqlfiddle.com"); xhr.setRequestHeader("x-openidm-nosession", "true"); xhr.setRequestHeader("user-agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"); xhr.setRequestHeader("content-type", "application/json"); xhr.setRequestHeader("accept", "application/json, text/javascript, */*; q=0.01"); xhr.setRequestHeader("x-openidm-username", "anonymous"); xhr.setRequestHeader("x-requested-with", "XMLHttpRequest"); xhr.setRequestHeader("referer", "http://sqlfiddle.com/"); xhr.setRequestHeader("accept-encoding", "gzip, deflate"); xhr.setRequestHeader("accept-language", "en-US,en;q=0.9"); xhr.setRequestHeader("cookie", "__utma=56278313.1278714651.1534647934.1534647934.1534647934.1; __utmc=56278313; __utmz=56278313.1534647934.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmt=1; __utmb=56278313.2.10.1534647934"); xhr.setRequestHeader("cache-control", "no-cache"); xhr.setRequestHeader("postman-token", "565c28a0-d181-43cf-cf40-3ee5441e91ef"); xhr.send(data);
+</script>
 <h2 title="I'm a header">The title Attribute</h2>
 
 <p title="I'm a tooltip">
